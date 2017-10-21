@@ -9,5 +9,8 @@
   </div>
 
   <%= render @wishlist_items %>
-  <%= paginate @wishlist_items %>
+
+  <ul class="pagination">
+    <%= paginate @wishlist_items %>
+  </ul>
 </div>
