@@ -3,9 +3,9 @@ class WishlistsController < ApplicationController
 
   def show
     skip_authorization
-    @wishlist = Wishlist.includes(wishlist_items: :item).find(params[:id]).per(10)
+    @wishlist = Wishlist.includes(wishlist_items: :item).find(params[:id])
     @site_managers = @wishlist.users
-    @wishlist_items = @wishlist.wishlist_items.page(params[:page])
+    @wishlist_items = @wishlist.wishlist_items.page(params[:page]).per(10)
   end
 
   def new
