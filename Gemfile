@@ -31,6 +31,7 @@ gem 'jquery-rails', '~> 4.3.1'
 
 # Gem for pagination
 gem 'kaminari'
+gem 'bootstrap4-kaminari-views'
 
 # required for Bootstrap tooltips
 source 'https://rails-assets.org' do
