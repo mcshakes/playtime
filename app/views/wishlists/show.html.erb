@@ -20,6 +20,7 @@
     <%= @wishlist.users.map(&:display_name).join(", ") %>
   </p>
 
+
   <%= render @wishlist.wishlist_items %>
   <%= paginate @wishlist_items %>
 
